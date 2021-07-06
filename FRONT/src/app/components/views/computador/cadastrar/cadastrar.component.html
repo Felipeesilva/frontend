@@ -1,0 +1,51 @@
+<mat-card>
+  <mat-card-title> Novo Computador </mat-card-title>
+  <mat-card-content>
+       <!-- ID do pc -->
+       <mat-form-field class="id">
+        <mat-label for="id">IdComputador</mat-label>
+        <input matInput placeholder="Digite a id computador" type="number" name="id" [(ngModel)]="id"/>
+      </mat-form-field>
+    <!-- Nome -->
+    <mat-form-field class="dono">
+      <mat-label for="dono">Nome do dono</mat-label>
+      <input matInput placeholder="Digite o nome do dono do computador" type="text" name="dono" [(ngModel)]="dono"/>
+    </mat-form-field>
+
+    <!-- placamae -->
+    <mat-form-field class="placamae">
+      <mat-label for="placamae">Placa mae</mat-label>
+      <input matInput placeholder="Digite a placamae" type="text" name="placamae" [(ngModel)]="placamae"/>
+    </mat-form-field>
+
+      <!-- processador -->
+      <mat-form-field class="processador">
+        <mat-label for="processador">processador</mat-label>
+        <input matInput placeholder="Digite o processador" type="text" name="processador" [(ngModel)]="processador"/>
+      </mat-form-field>
+
+        <!-- memoria -->
+    <mat-form-field class="memoria">
+      <mat-label for="memoria">memoria</mat-label>
+      <input matInput placeholder="Digite a memoria" type="number" name="memoria" [(ngModel)]="memoria"/>
+    </mat-form-field>
+
+      <!-- armazenamento -->
+      <mat-form-field class="armazenamento">
+        <mat-label for="armazenamento">armazenamento</mat-label>
+        <input matInput placeholder="Digite o armazenamento" type="text" name="armazenamento" [(ngModel)]="armazenamento"/>
+      </mat-form-field>
+
+        <!-- Fonte -->
+    <mat-form-field class="fonte">
+      <mat-label for="fonte">Fonte</mat-label>
+      <input matInput placeholder="Digite a fonte" type="text" name="fonte" [(ngModel)]="fonte"/>
+    </mat-form-field>
+
+    <mat-card-actions>
+      <button mat-raised-button color="warn" (click)="cadastrarComputador()">Cadastrar Computador</button>
+    </mat-card-actions>
+  </mat-card-content>
+</mat-card>
+
+

@@ -1,0 +1,29 @@
+<section>
+  <div class="example-button-row">
+    <!-- Cadastrar Computdor -->
+    <a mat-raised-button routerLink="/computador/cadastrar">
+    <mat-icon>person_add</mat-icon>Cadastrar Computador</a>
+    <!-- Deletar Administrativo -->
+    <a mat-raised-button routerLink="/computador/remover/:id">
+    <mat-icon>person_remove</mat-icon>Deletar Administrativo</a>
+  
+</section>
+
+<table mat-table [dataSource]="computador" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="dono">
+    <th mat-header-cell *matHeaderCellDef> Dono </th>
+    <td mat-cell *matCellDef="let computador"> {{computador.dono}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="matriculaAdm">
+    <th mat-header-cell *matHeaderCellDef> Matricula dos Administrativos </th>
+    <td mat-cell *matCellDef="let computador"> {{administrativo.matriculaAdm}} </td>
+  </ng-container>
+
+ 
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  
+</table>

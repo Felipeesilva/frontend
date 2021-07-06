@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-card-title> Deletar Computador </mat-card-title>
+    <mat-card-content>
+      <!-- matricula -->
+      <mat-form-field class="id">
+        <mat-label for="id">Id</mat-label>
+        <input matInput placeholder="Digite o Id" type="number" name="id" [(ngModel)]="id"/>
+      </mat-form-field>
+      <mat-card-actions>
+        <button mat-raised-button color="warn" (click)="remover(id)">Deletar</button>
+      </mat-card-actions>
+    </mat-card-content>
+  </mat-card>
